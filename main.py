@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 
 # Authenticate to OpenAI API
-openai.api_key = "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"
+openai.api_key = OPENAI_API_KEY
 
 def summarize_text(text, model, max_length=50):
     completions = openai.Completion.create(
